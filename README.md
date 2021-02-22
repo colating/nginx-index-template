@@ -39,27 +39,32 @@ server {
 
 	Perhas need to change as follow:
 	1. To compatible the pc and the mobile phone, add follow:
-			<meta http-equiv="content-type" content="text/html" />
-			<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  	   <xsl:template match="/">
+	     <html>
+	       <head>
+		 <title>Colating Documents</title>
+		 <meta charset="utf-8" />
+		 <meta http-equiv="content-type" content="text/html" />  ## Colating add
+		 <meta http-equiv="X-UA-Compatible" content="IE=edge" />  ## Colating add
+		 <meta name="viewport" content="width=device-width, initial-scale=1.0" />  ## Colating add
 
-	2. Font size:	/* Colating change ----------- */
-				font-weight: 620;
-				font-size: 120%;
-				line-height: 100%"
+	2. Font size:
+				font-weight: 620;  ## Colating add
+				font-size: 120%;  ## Colating add
+				line-height: 100%"  ## Colating add
 			  }
 			</style>
 		  </head>
 
 	3. setup: only index the "docs" dir.
 	----------- 
-	Change:
+	## Colating Change:
 	location / {
-	  try_files $uri $uri/ =404;
-	  ## try_files $uri @autoindex;  ## cancel:
+	  try_files $uri $uri/ =404;    ## Colating add
+	  ## try_files $uri @autoindex;  ## Colating cancel:
 	}
 	----------- 
-	Need:
+	## Colating Change:
 	location ~ ^/docs(/.*){
 	      autoindex on;
 	      autoindex_format xml;
