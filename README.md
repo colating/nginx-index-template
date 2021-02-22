@@ -37,7 +37,7 @@ server {
 
 ===================== 
 
-	Have Change:
+	Perhas need to change as follow:
 	1. To compatible the pc and the mobile phone, add follow:
 			<meta http-equiv="content-type" content="text/html" />
 			<meta http-equiv="X-UA-Compatible" content="IE=edge" />
