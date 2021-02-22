@@ -34,33 +34,37 @@ server {
 
 ![Screenshot](/images/screenshot.png?raw=true "Screenshot")
 
+
 ===================== 
 
-Have Change:
-1. To compatible the pc and the mobile phone, add follow:
-		<meta http-equiv="content-type" content="text/html" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-2. Font size:	/* Colating change ----------- */
-			font-weight: 620;
-			font-size: 120%;
-			line-height: 100%"
-		  }
-		</style>
-	  </head>
+	Have Change:
+	1. To compatible the pc and the mobile phone, add follow:
+			<meta http-equiv="content-type" content="text/html" />
+			<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-3. setup: only index the "docs" dir.
------------ 
-Change:
-location / {
-  try_files $uri $uri/ =404;
-  ## try_files $uri @autoindex;  ## cancel:
-}
------------ 
-Need:
-location ~ ^/docs(/.*){
-      autoindex on;
-      autoindex_format xml;
-      xslt_stylesheet /home/aptly/nginx_template.xslt path='$uri';
- }
+	2. Font size:	/* Colating change ----------- */
+				font-weight: 620;
+				font-size: 120%;
+				line-height: 100%"
+			  }
+			</style>
+		  </head>
+
+	3. setup: only index the "docs" dir.
+	----------- 
+	Change:
+	location / {
+	  try_files $uri $uri/ =404;
+	  ## try_files $uri @autoindex;  ## cancel:
+	}
+	----------- 
+	Need:
+	location ~ ^/docs(/.*){
+	      autoindex on;
+	      autoindex_format xml;
+	      xslt_stylesheet /home/aptly/nginx_template.xslt path='$uri';
+	 }
+
+
+
