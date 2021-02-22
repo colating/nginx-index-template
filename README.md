@@ -1,6 +1,9 @@
 # Nginx Index Template
 
-The orignal :https://github.com/jbox-web/nginx-index-template
+Good!
+Thank Franc.
+
+The orignal :  https://github.com/jbox-web/nginx-index-template
 
 ----------------- 
 
