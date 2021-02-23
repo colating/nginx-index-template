@@ -46,8 +46,9 @@ nginx_index-colating.xslt:
   2. To compatible the pc and the mobile phone, add follow:
   3. setup: only index the "docs" dir.
   4. Go to page top function.
-  5. 
-  [Screenshot] https://colating.win/docs-open/
+
+
+    	[Screenshot] https://colating.win/docs-open/
 --------------------------
 
 	Perhas need to change as follow:
