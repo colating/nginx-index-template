@@ -40,6 +40,15 @@ server {
 
 ===================== 
 
+nginx_index-colating.xslt:
+  Change log:
+  1. change font to note and size,  beautify the zh font.
+  2. To compatible the pc and the mobile phone, add follow:
+  3. setup: only index the "docs" dir.
+  4. Go to page top function.
+  
+--------------------------
+
 	Perhas need to change as follow:
 	1. To compatible the pc and the mobile phone, add follow:
   	   <xsl:template match="/">
