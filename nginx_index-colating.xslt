@@ -5,7 +5,6 @@
   I'm currently switching over completely from lighttpd to nginx. If you come
   up with a prettier stylesheet or other improvements, please tell me :)
 
--------------------------------------------  
   Original： https://github.com/jbox-web/nginx-index-template
 
 
